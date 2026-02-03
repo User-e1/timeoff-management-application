@@ -81,7 +81,7 @@ Create company account and use cloud based version.
 
 ```bash
 # Clone the repository
-git clone https://github.com/timeoff-management/application.git timeoff-management
+git clone https://github.com/User-e1/timeoff-management-application.git timeoff-management
 cd timeoff-management
 ```
 
@@ -106,13 +106,13 @@ Open http://localhost:3000/ in your browser.
 
 ```bash
 # Pull the image
-docker pull aliengen/timeoff-management-application:master
+docker pull User-e1/timeoff-management-application:master
 
 # Run the container using an `env` file to load the configuration
-docker run -d -p 3000:3000 --env-file ./env --name timeoff aliengen/timeoff-management-application:master
+docker run -d -p 3000:3000 --env-file ./env --name timeoff User-e1/timeoff-management-application:master
 
 # Or you can run the container using the `app.json` file to load the configuration
-docker run -d -p 3000:3000 -v ./config/app.json:/app/config/app.json --name timeoff aliengen/timeoff-management-application:master
+docker run -d -p 3000:3000 -v ./config/app.json:/app/config/app.json --name timeoff User-e1/timeoff-management-application:master
 ```
 
 ##### Build the image manually
